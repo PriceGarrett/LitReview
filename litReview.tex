@@ -1,9 +1,10 @@
-\documentclass[letterpaper,man,natbib]{apa6}  %Leave this stuff alone
+\documentclass[12pt, man]{apa6}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{ref.bib}
 
-\usepackage[english]{babel}
-\usepackage[utf8x]{inputenc}
-\usepackage{amsmath}
-\usepackage{graphicx}
 
 
 \begin{abstract}
@@ -30,7 +31,7 @@ How has AI truly affected society and what needs to be done about it? This artic
 \subsection*{Individuals as consumers}
 Consumers are having more interactions with AI as businesses automate more aspects of the consumer experience.  Any situation in which a consumer interacts with an AI, knowingly or not, to achieve something can be considered when discussing AI's impact on consumers.\\
 \subsubsection*{Personalized Experiences}
-\cite{Puntoni2021}
+The use of AI in consumer experiences leads to very different interactions with each consumer \parencite{Puntoni2021}.
 
 \subsubsection*{Invasion of Privacy}
 
@@ -46,7 +47,6 @@ Consumers are having more interactions with AI as businesses automate more aspec
 
 \subsection*{Impact on the masses}
 
-\bibliography{ref}
-
+\printbibliography
 
 \end{document}
